@@ -16,6 +16,6 @@ class ContatoController extends Controller
         int $categoria_id = 0 // Define um valor padrão caso a categoria não seja passada
 
         ){
-        echo "Nome: $nome e Categoria: $categoria_id ";
+        echo "Nome: $nome e Categoria: $categoria_id "; 
     }
 }
