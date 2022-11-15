@@ -32,8 +32,4 @@ Route::get('/quem-somos', 'QuemSomosController@quemSomos');
     em que os parametros são passados para as rotas, ou seja, os parametros
     tem relação direta com a odem das váriáveis.
 */
-Route::get('/contato/{nome}', function(string $nome){
-
-    echo "$nome";
-
-});
+Route::get('/contato/{nome}/{categoria_id}', 'ContatoController@contatoNome')->where('categoria_id', '[0-9]')->where('nome', '[A-Za-z]+');

@@ -1,1 +1,1 @@
-<H1>Quem somos</H1>
+<H2>Quem somos</H2>
