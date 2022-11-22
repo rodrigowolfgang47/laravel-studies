@@ -42,9 +42,6 @@ grupo onde aquela rota passar ser acessada a partir
 do " 'nome do prefixo(ex: /app )' + 'nome da rota' " */
 
 Route::prefix('/app')->group(function () {
-
-
-
     Route::get('/fornecedores', function () {
         return 'Fornecedores'; }
     )->name('app.fornecedores');
@@ -81,7 +78,7 @@ Route::prefix('/app')->group(function () {
 
 // Rota de teste para redirecionamento
 
-Route::get('/rota1', 'Rota1Controller@rota1')->name('site.rota1');
+Route::get('/rota1/{n1}/{n2}', 'Rota1Controller@rota1')->name('site.rota1');
 
 Route::get('/rota2', 'Rota2Controller@rota2')->name('site.rota2');
 
